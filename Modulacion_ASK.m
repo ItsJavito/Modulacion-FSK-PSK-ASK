@@ -1,8 +1,7 @@
 clc;
 clear all;
-close all;
 % Datos binarios
-x=[ 1 0 0 1 1 0 1 1];
+x=[ 1 0 0 1 1 0 1 1 1 0 0 1 1 0 1 1];
 % Periodo del bit
 bp=.000001;
 disp(' Datos binarios en el Transmisor :');

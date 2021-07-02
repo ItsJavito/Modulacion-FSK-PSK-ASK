@@ -2,7 +2,7 @@ clc;
 clear all;
 close all;
 % Datos binarios
-x=[ 1 0 0 1 1 0 1 0 1 0 0 1 1 0 1 0];
+x=[ 1 0 0 1 1 0 1 1 1 0 0 1 1 0 1 1];
 % Periodo del bit
 bp=.000001;
 disp(' Datos binarios en el Transmisor :');
@@ -34,7 +34,7 @@ f1=br*8;
 % Frecuencia portadora para el dato "O"
 f2=br*2;    
 t2=bp/99:bp/99:bp;                 
-ss=length(t2);
+ss=length(t2); %ss = 99
 m=[];
 for (i=1:1:length(x))
     if (x(i)==1)
@@ -59,8 +59,8 @@ for n=ss:ss:length(m)
   y1=cos(2*pi*f1*t);
 % Señal portadora para el dato "0"
   y2=cos(2*pi*f2*t);
-  mm=y1.*m((n-(ss-1)):n);
-  mmm=y2.*m((n-(ss-1)):n);
+  mm= y1.*m ((n-(ss-1)):n);
+  mmm=y2.*m ((n-(ss-1)):n);
   t4=bp/99:bp/99:bp;
   %
   z1=trapz(t4,mm)
