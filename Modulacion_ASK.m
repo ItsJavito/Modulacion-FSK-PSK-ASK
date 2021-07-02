@@ -2,7 +2,7 @@ clc;
 clear all;
 close all;
 % Datos binarios
-x=[ 1 0 0 1 1 0 1];
+x=[ 1 0 0 1 1 0 1 1];
 % Periodo del bit
 bp=.000001;
 disp(' Datos binarios en el Transmisor :');
@@ -19,7 +19,7 @@ for n=1:1:length(x)
 end
 t1=bp/100:bp/100:100*length(x)*(bp/100);
 subplot(3,1,1);
-plot(t1,bit,'lineWidth',2.5);grid on;
+plot(t1,bit,'lineWidth', 2.5);grid on;
 axis([ 0 bp*length(x) -.5 1.5]);
 ylabel('amplitud(volt)');
 xlabel(' tiempo(seg)');
@@ -47,6 +47,7 @@ end
 t3=bp/99:bp/99:bp*length(x);
 subplot(3,1,2);
 plot(t3,m);
+axis([ 0 bp*length(x) -6 6]);
 xlabel('tiempo(seg)');
 ylabel('amplitud(volt)');
 grid on;

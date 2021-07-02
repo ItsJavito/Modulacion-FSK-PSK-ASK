@@ -2,7 +2,7 @@ clc;
 clear all;
 close all;
 % Datos binarios
-x=[ 1 0 1 0 1 0 1];
+x=[ 1 0 0 1 1 0 1 1 0 0 1 1 0 1 0 1];
 % Periodo del bit
 bp=.000001;
 disp(' Datos binarios en el Transmisor :');
@@ -47,6 +47,7 @@ end
 t3=bp/99:bp/99:bp*length(x);
 subplot(3,1,2);
 plot(t3,m);
+axis([ 0 bp*length(x) -6 6]);
 xlabel('tiempo(seg)');
 ylabel('amplitud(volt)');
 title('Forma de onda para la modulación PSK correspondiente a los Datos binarios');
