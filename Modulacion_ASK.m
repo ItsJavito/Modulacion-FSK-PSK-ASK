@@ -1,6 +1,7 @@
-clc;
 clear all;
+function Modulacion_ASK(seq)
 % Datos binarios
+disp(seq);
 x=[ 1 0 0 1 1 0 1 1 1 0 0 1 1 0 1 1];
 % Periodo del bit
 bp=.000001;
@@ -100,6 +101,10 @@ title('Datos binarios recibidos como señal digital después de la demodulación AS
 
 uicontrol("style", "pushbutton","units", "normalized", "string", "Volver Menu", "callback",
  @ReturnMenu, "position", [0.35 0.4 0.35 0.06]);
-function ReturnMenu
-  close;
-  Menu;
+
+endfunction
+
+  function ReturnMenu
+    close;
+    Menu;
+  endfunction
