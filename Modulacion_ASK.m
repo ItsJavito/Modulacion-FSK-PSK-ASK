@@ -97,3 +97,9 @@ ylabel('amplitud(volt)');
 xlabel(' tiempo(seg)');
 title('Datos binarios recibidos como señal digital después de la demodulación ASK');
 %>>>>>>>>>>>>>>>>>>>>>>>>>> fin del programa >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>%
+
+uicontrol("style", "pushbutton","units", "normalized", "string", "Volver Menu", "callback",
+ @ReturnMenu, "position", [0.35 0.4 0.35 0.06]);
+function ReturnMenu
+  close;
+  Menu;
