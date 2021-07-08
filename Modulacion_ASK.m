@@ -1,4 +1,3 @@
-
 function Modulacion_ASK(seq)
 % Datos binarios
 x=seq;
@@ -7,7 +6,7 @@ bp=.000001;
 disp(' Datos binarios en el Transmisor :');
 disp(x);
 %XX representación de los datos binarios transmitidos como una señal digital XXX
-bit=[]; 
+bit=[];
 for n=1:1:length(x)
     if x(n)==1;
        se=ones(1,100);
