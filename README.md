@@ -6,3 +6,11 @@ Se realiza prueba del ingreso de la secuencia de bits para realizar la modulaci√
 
 ![ModulacionPrueba](https://github.com/ItsJavito/Modulacion-FSK-PSK-ASK/blob/main/Images/PruebaASK.gif)
 
+# Validaciones para la sequencia de bits
+Validamos que la secuencia que se ingresa por teclado sea solamente de 1's y 0's
+![ModulacionPrueba](https://github.com/ItsJavito/Modulacion-FSK-PSK-ASK/blob/main/Images/PruebaBits.gif)
+
+Validamos que la sequencia de bits ingresadas por teclado no exceda de 16 bits pero que no sea menor a 8 bits 
+
+![ModulacionPrueba](https://github.com/ItsJavito/Modulacion-FSK-PSK-ASK/blob/main/Images/PruebaBitsTam.gif)
+
